@@ -1,1 +1,1 @@
-an web page for frontendmentor.io chalenges 
+a web page for frontendmentor.io chalenges 
