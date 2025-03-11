@@ -2,4 +2,137 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'open sans';
+}
+
+.container {
+    display: grid;
+    padding: 10px;
+    padding-top: 1rem;
+    margin: 0 auto;
+    background: linear-gradient(-25deg, white, rgb(165, 184, 189));
+}
+
+.item {
+    background-color: rebeccapurple;
+}
+
+.card {
+    border-radius: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.purple {
+    background-color: #733fc8;
+}
+
+.Gray {
+    background-color: #49556b;
+}
+
+.white {
+    background-color: white;
+}
+
+.sormeii {
+    background-color: #191f2d;
+}
+
+.card.white .person-info {
+    color: #777 !important;
+}
+
+.card.white .heading-text,
+.card.white .qoute {
+    color: #666 !important;
+}
+
+
+
+.card-profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-top: 1rem;
+    padding-bottom: 0.4rem;
+}
+
+.user-photo {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+.card-profile .person-info {
+    color: whitesmoke;
+}
+
+.card-profile .person-info .status {
+    font-size: 0.7rem;
+    color: #d4d3d3;
+}
+
+.card .heading-text {
+    color: whitesmoke;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card .qoute {
+    color: rgb(230, 228, 228);
+    font-size: 0.9rem;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 30px 50px;
+        max-width: 90%;
+    }
+
+    .card {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .container {
+        grid-template-columns: repeat(12, auto);
+        gap: 2rem;
+    }
+
+    .item1 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    .item2 {
+        grid-column-start: 7;
+        grid-column-end: 12;
+    }
+
+    .item3 {
+        grid-row-start: 2;
+        grid-column: 1/5;
+    }
+
+    .item4 {
+        grid-column: 5/12;
+    }
+
+    .item5 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 12;
+        grid-column-end: 15;
+    }
+
+
 }
